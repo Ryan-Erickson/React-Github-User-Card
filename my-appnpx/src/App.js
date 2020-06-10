@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-
+import Calendar from 'react-github-contribution-calendar';
 import UserCard from './components/UserCard';
 import FriendsList from './components/FriendsList';
 
@@ -27,6 +27,7 @@ class App extends Component {
   getUser = () => {
     axios.get(`https://api.github.com/users/${this.state.username}`)
       .then((res) => {
+        console.log (res.data)
         this.setState({
           gitUser: res.data
         })

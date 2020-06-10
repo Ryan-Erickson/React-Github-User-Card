@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.19.2",
+    "react-github-contribution-calendar": "^2.0.0",
     "styled-components": "^5.1.0"
   }
 }
